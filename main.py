@@ -21,7 +21,7 @@ def main():
             decrypt_file(encrypted_file_path, password)
             print(f"File {encrypted_file_path} decrypted successfully.")
         elif choice == '3':
-            print("---------------Bye---------------.")
+            print("---------------Bye---------------")
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
