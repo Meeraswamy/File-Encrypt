@@ -19,7 +19,7 @@ def decrypt_file(encrypted_file_path, password):
     cipher = AES.new(key, AES.MODE_CFB, iv)
     plaintext = cipher.decrypt(ciphertext)
 
-    decrypted_file_path = encrypted_file_path[:-4]  # Remove the '.enc' extension
+    decrypted_file_path = encrypted_file_path[:-4] 
     with open(decrypted_file_path, 'wb') as file:
         file.write(plaintext)
 
